@@ -140,12 +140,6 @@ int main()
 
 ---
 
-## Time and Space Complexity
-
-| Algorithm | Best | Average | Worst | Space |
-|-----------|------|---------|-------|-------|
-| Quick Sort | O(n log n) | O(n log n) | O(n²) | O(log n) |
-| Merge Sort | O(n log n) | O(n log n) | O(n log n) | O(n) |
 
 ---
 
