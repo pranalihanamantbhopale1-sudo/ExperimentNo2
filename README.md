@@ -34,7 +34,6 @@ void quickSort(int arr[], int low, int high)
             if (arr[j] <= pivot)
             {
                 i++;
-
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
@@ -90,7 +89,6 @@ void mergeSort(int arr[], int low, int high)
 
         mergeSort(arr, low, mid);
         mergeSort(arr, mid + 1, high);
-
         merge(arr, low, mid, high);
     }
 }
@@ -115,7 +113,6 @@ int main()
     quickSort(arr, 0, n - 1);
 
     printf("Array after Quick Sort: ");
-
     for (i = 0; i < n; i++)
         printf("%d ", arr[i]);
 
@@ -124,7 +121,6 @@ int main()
     mergeSort(arrCopy, 0, n - 1);
 
     printf("Array after Merge Sort: ");
-
     for (i = 0; i < n; i++)
         printf("%d ", arrCopy[i]);
 
@@ -132,3 +128,28 @@ int main()
 
     return 0;
 }
+```
+
+---
+
+## Output
+
+![output_quick_merge_sort](1000012024.jpg)
+
+---
+
+## Applications
+
+1. Used in sorting operations in system libraries and compilers.
+2. Commonly applied in database query optimization and data indexing.
+3. Merge Sort is preferred in external sorting for large datasets stored on disk.
+4. Quick Sort is used in real-time applications where memory usage must be minimized.
+5. Both algorithms are employed in data preprocessing for machine learning models.
+6. Merge Sort is useful in parallel computing due to its predictable structure.
+7. Quick Sort is applied in embedded systems where space optimization is important.
+
+---
+
+## Conclusion
+
+Quick Sort and Merge Sort are efficient divide-and-conquer sorting algorithms. **Quick Sort** is generally faster for in-memory sorting with low extra space, while **Merge Sort** guarantees **O(n log n)** performance and is ideal for large and external datasets due to its stable sorting behavior.
